@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListActivity"
+    android:background="@drawable/gradient">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_horizontal"
+            android:layout_marginTop="35dp"
+            android:orientation="vertical"
+            android:padding="26dp"
+            android:textAlignment="gravity">
+
+            <TextView
+                android:id="@+id/accumulator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="100%"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="65sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Shalat telah dilaksanakan sejak 1 Januari 2022"
+                android:textAlignment="center"
+                android:textColor="#FBFBFB"
+                android:textSize="20sp" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="24dp"
+                android:background="#FFFFFF" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/list_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="26dp">
+
+            <TextView
+                android:id="@+id/currentDay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jum'at"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/currentDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="17 Juni 2022"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:id="@+id/subuhOption"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="402dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Subuh"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    android:textStyle="normal" />
+
+                <ImageView
+                    android:id="@+id/subuhOptionImage"
+                    android:layout_width="155dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/ic_circle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dzuhurOption"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="402dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Dzuhur"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    android:textStyle="normal" />
+
+                <ImageView
+                    android:id="@+id/dzuhurOptionImage"
+                    android:layout_width="155dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/ic_circle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/asharOption"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="402dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Ashar"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    android:textStyle="normal" />
+
+                <ImageView
+                    android:id="@+id/asharOptionImage"
+                    android:layout_width="155dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/ic_circle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/maghribOption"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="402dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Maghrib"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    android:textStyle="normal" />
+
+                <ImageView
+                    android:id="@+id/maghribOptionImage"
+                    android:layout_width="155dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/ic_circle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/isyaOption"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="402dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Isya"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    android:textStyle="normal" />
+
+                <ImageView
+                    android:id="@+id/isyaOptionImage"
+                    android:layout_width="155dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/ic_circle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24" />
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        app:srcCompat="@drawable/ic_baseline_arrow_forward_ios_24" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
